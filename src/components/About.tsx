@@ -28,8 +28,9 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
             <div className="w-20 h-1 bg-gradient-accent mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Fresher Computer Science student interested in Data Analyst and  Web Development, eager to
-learn and contribute.
+              Frontend Developer building responsive and modern websites with AI-assisted workflows.
+              Aspiring Data Analyst passionate about transforming data into meaningful insights.
+              Creative Video Editor crafting engaging content for digital platforms.
             </p>
           </div>
 
