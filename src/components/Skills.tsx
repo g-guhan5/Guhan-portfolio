@@ -4,17 +4,17 @@ const Skills = () => {
   const skillCategories = [
     {
       category: 'Programming',
-      skills: ['Python','Java'],
+      skills: ['Python'],
     },
     {
       category: 'Frontend',
-      skills: ['React', 'HTML/CSS', 'Tailwind CSS'],
+      skills: ['React', 'HTML/CSS', 'Tailwind CSS', 'JavaScript'],
     },
     {
-      category: 'Technical Tools',skills: [ 'Excel', 'Power BI', 'Pandas','NumPy']
+      category: 'Technical Tools', skills: ['Excel', 'Power BI', 'Pandas', 'NumPy']
     },
     {
-      category: 'Other Tools',skills: [ 'Photoshop', 'Capcut Desktop', 'Picsart']
+      category: 'Other Tools', skills: ['Photoshop', 'Capcut Desktop', 'Picsart']
     }
   ];
 
