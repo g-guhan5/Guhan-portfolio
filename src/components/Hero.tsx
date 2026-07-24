@@ -33,10 +33,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4">
-            CSE Student
+            Frontend Developer
           </p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -46,7 +46,7 @@ const Hero = () => {
             >
               View My Work
             </Button>
-            
+
             <Button
               variant="outline"
               size="lg"
