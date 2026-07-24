@@ -11,13 +11,45 @@ const Projects = () => {
         'A personal portfolio built with React.js, highlighting my skills, creative tools, and projects in one interactive space.',
       technologies: ['React.js', 'Tailwind css'],
       github: 'https://github.com/g-guhan5/Guhan-portfolio.git',
-      live: '#',
+      live: 'https://guhan-portfolio-beta.vercel.app',
+    },
+    {
+      title: 'VectorDB',
+      description:
+        'Built a full front-end restaurant website with dynamic menu display and responsive UI, deployed to production.',
+      technologies: ['React.js', 'Tailwind css'],
+      github: 'https://github.com/g-guhan5/vectordb.git',
+      live: 'https://vektordb.vercel.app/',
+    },
+    {
+      title: 'Jerry EFX',
+      description:
+        'Built a full front-end restaurant website with dynamic menu display and responsive UI, deployed to production.',
+      technologies: ['React.js', 'Tailwind css'],
+      github: 'https://github.com/g-guhan5/Guhan-portfolio.git',
+      live: 'https://jerry-efx-rosy.vercel.app',
+    },
+    {
+      title: 'KGF Restaurant',
+      description:
+        'Built a full front-end restaurant website with dynamic menu display and responsive UI, deployed to production.',
+      technologies: ['React.js', 'Tailwind css'],
+      github: 'https://github.com/g-guhan5/KGF-RESTAUIRANT.git',
+      live: 'https://kgf-restauirant.vercel.app/',
+    },
+    {
+      title: 'KGF Clothing',
+      description:
+        'Built a full front-end restaurant website with dynamic menu display and responsive UI, deployed to production.',
+      technologies: ['React.js', 'Tailwind css'],
+      github: 'https://github.com/g-guhan5/KGF-CLOTHING.git',
+      live: 'https://kgf-clothing.designing.workers.dev/',
     },
     {
       title: 'MOBILE PHONE DETECTION SYSTEM',
       description:
         'Mini Project - YOLOv8-Based Mobile Detection — A Step Toward Intelligent Monitoring Systems.',
-      technologies: ['Python','OpenCv'],
+      technologies: ['Python', 'OpenCv'],
       github: 'https://github.com/g-guhan5/Mobilephone-Detection.py.git',
       live: '#',
     },
@@ -25,15 +57,15 @@ const Projects = () => {
       title: 'AI-POWERED PENETRATION TESTING',
       description:
         'Major Project - AI-Driven Penetration Testing Framework for Proactive Network & System Security.',
-      technologies: [],
-      github: '#',
+      technologies: ['Python', 'Nmap'],
+      github: 'https://github.com/g-guhan5/AI-Driven-Penetration-Testing-Framework.git',
       live: '#',
     },
     {
-      title: 'Web Development Intern – Rategle Technologies',
+      title: 'Front-End Development Intern',
       description:
-        'Completed a short-term internship focused on frontend development, where I gained basic knowledge of coding and web development concepts.',
-      technologies: ['React.js','Tailwind css'],
+        'Completed a short-term internship focused on frontend development, where I gained basic knowledge of web development concepts.',
+      technologies: ['React.js', 'Tailwind css'],
       github: '#',
       live: '#',
     },
@@ -68,13 +100,22 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                
+                  {project.github && project.github !== '#' && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  {project.live && project.live !== '#' && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </Card>
             ))}
