@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: 'VectorDB',
       description:
-        'Built a full front-end restaurant website with dynamic menu display and responsive UI, deployed to production.',
+        'VektorDB a conceptual, high-performance distributed vector database for real-time AI memory.',
       technologies: ['React.js', 'Tailwind css'],
       github: 'https://github.com/g-guhan5/vectordb.git',
       live: 'https://vektordb.vercel.app/',
@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: 'Jerry EFX',
       description:
-        'Built a full front-end restaurant website with dynamic menu display and responsive UI, deployed to production.',
+        'Jerry EFX is a modern social media dashboard designed to manage and track social media performance with a clean and responsive interface.',
       technologies: ['React.js', 'Tailwind css'],
       github: 'https://github.com/g-guhan5/Guhan-portfolio.git',
       live: 'https://jerry-efx-rosy.vercel.app',
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       title: 'KGF Clothing',
       description:
-        'Built a full front-end restaurant website with dynamic menu display and responsive UI, deployed to production.',
+        'The website showcases stylish clothing collections with a clean, responsive, and user-friendly design for a smooth shopping experience.',
       technologies: ['React.js', 'Tailwind css'],
       github: 'https://github.com/g-guhan5/KGF-CLOTHING.git',
       live: 'https://kgf-clothing.designing.workers.dev/',
