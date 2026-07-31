@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/ThemeProvider';
 
@@ -12,12 +12,14 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMobileMenuOpen(false);
@@ -29,18 +31,20 @@ const Navbar = () => {
     { label: 'About', id: 'about' },
     { label: 'Skills', id: 'skills' },
     { label: 'Projects', id: 'projects' },
-    //{ label: 'Education', id: 'education' },*
     { label: 'Contact', id: 'contact' },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-card/95 backdrop-blur-lg shadow-medium' : 'bg-transparent'
+        isScrolled
+          ? 'bg-card/95 backdrop-blur-lg shadow-medium'
+          : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <a
             href="#home"
             onClick={(e) => {
@@ -67,12 +71,30 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+
+            {/* Resume Button */}
+            <a
+              href="public/Guhan_Resume_2026.pdf"
+              download="Guhan_Resume_2026.pdf"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-primary-foreground font-medium shadow hover:scale-105 hover:opacity-90 transition-all duration-300"
+            >
+              <Download className="w-4 h-4" />
+              Resume
+            </a>
+
+            {/* Theme Toggle */}
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() =>
+                setTheme(theme === 'dark' ? 'light' : 'dark')
+              }
             >
-              {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              {theme === 'dark' ? (
+                <Sun className="w-5 h-5" />
+              ) : (
+                <Moon className="w-5 h-5" />
+              )}
             </Button>
           </div>
 
@@ -81,10 +103,17 @@ const Navbar = () => {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() =>
+                setTheme(theme === 'dark' ? 'light' : 'dark')
+              }
             >
-              {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              {theme === 'dark' ? (
+                <Sun className="w-5 h-5" />
+              ) : (
+                <Moon className="w-5 h-5" />
+              )}
             </Button>
+
             <Button
               variant="ghost"
               size="icon"
@@ -108,11 +137,21 @@ const Navbar = () => {
                   e.preventDefault();
                   scrollToSection(link.id);
                 }}
-                className="block px-4 py-2 text-foreground/80 hover:text-primary hover:bg-muted rounded-lg transition-colors duration-200"
+                className="block px-4 py-2 rounded-lg text-foreground/80 hover:text-primary hover:bg-muted transition-colors duration-200"
               >
                 {link.label}
               </a>
             ))}
+
+            {/* Mobile Resume Button */}
+            <a
+  href="public/Guhan_Resume_2026.pdf"
+  download="Guhan_Resume_2026.pdf"
+  className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-primary-foreground hover:opacity-90 transition-all duration-300"
+>
+  <Download className="w-4 h-4" />
+  Resume
+</a>
           </div>
         </div>
       )}
