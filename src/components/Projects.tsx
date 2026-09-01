@@ -14,6 +14,14 @@ const Projects = () => {
       live: 'https://guhan-portfolio-beta.vercel.app',
     },
     {
+      title: 'Editor-Portfolio',
+      description:
+        'Modern video editor portfolio built to showcase reels, color styling, and creative projects.',
+      technologies: ['React.js', 'Tailwind css'],
+      github: 'https://github.com/g-guhan5/Editor-Portfolio.git',
+      live: 'https://guhan-editor-portfolio.vercel.app/',
+    },
+    {
       title: 'VectorDB',
       description:
         'VektorDB a conceptual, high-performance distributed vector database for real-time AI memory.',
@@ -79,7 +87,7 @@ const Projects = () => {
             <h2 className="text-4xl font-bold mb-4">Projects</h2>
             <div className="w-20 h-1 bg-gradient-accent mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              My recent work and personal projects
+              My recent work and personal projects.
             </p>
           </div>
 
