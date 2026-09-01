@@ -75,6 +75,7 @@ const Navbar = () => {
             {/* Resume Button */}
             <a
               href="/Guhan_Resume_2026.pdf"
+              href="public/Guhan_Resume_2026.pdf"
               download="Guhan_Resume_2026.pdf"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-primary-foreground font-medium shadow hover:scale-105 hover:opacity-90 transition-all duration-300"
             >
@@ -145,7 +146,11 @@ const Navbar = () => {
 
             {/* Mobile Resume Button */}
             <a
+<<<<<<< HEAD
   href="/Guhan_Resume_2026.pdf"
+=======
+  href="public/Guhan_Resume_2026.pdf"
+>>>>>>> 114774a (Update portfolio and resume)
   download="Guhan_Resume_2026.pdf"
   className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-primary-foreground hover:opacity-90 transition-all duration-300"
 >
