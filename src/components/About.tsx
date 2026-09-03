@@ -29,7 +29,6 @@ const About = () => {
             <div className="w-20 h-1 bg-gradient-accent mx-auto mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Frontend Developer building responsive and modern websites with AI-assisted workflows.
-              Aspiring Data Analyst passionate about transforming data into meaningful insights.
               Creative Video Editor crafting engaging content for digital platforms.
             </p>
           </div>
