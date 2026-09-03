@@ -25,8 +25,7 @@ const Skills = () => {
             <h2 className="text-4xl font-bold mb-4">Skills & Technologies</h2>
             <div className="w-20 h-1 bg-gradient-accent mx-auto mb-6" />
             <p className="text-lg text-muted-fore ground max-w-2xl mx-auto">
-             Inalyst, webdevelopment,Graphic Design and video editing. 
-              I have a growing set of s have a growing set of skills in Data Akills in web development.
+              Showcasing my frontend development skills through responsive, interactive, and user-friendly web interfaces built with modern technologies.
             </p>
           </div>
 
